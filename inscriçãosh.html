@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição - Encontro Sherlock Holmes</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+  <div id="dataHora"></div>
+
+  <div class="container">
+
+    <header>
+      <h1>Formulário de Inscrição</h1>
+      <p>Participe do maior evento de mistérios do ano!</p>
+    </header>
+
+    <main>
+
+      <section>
+        <form id="formularioInscricao">
+          <label for="nome">Nome completo:</label><br>
+          <input type="text" id="nome" name="nome"><br><br>
+
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="telefone">Telefone:</label><br>
+          <input type="tel" id="telefone" name="telefone"><br><br>
+
+          <label for="data">Data de nascimento:</label><br>
+          <input type="date" id="data" name="data"><br><br>
+
+          <button type="submit" class="botao">Enviar Inscrição</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Encontro Sherlock Holmes | contato@sherlockevent.com</p>
+    </footer>
+
+  </div>
+
+  <script>
+    function atualizarDataHora() {
+      const agora = new Date();
+      const dataHora = agora.toLocaleString();
+      document.getElementById('dataHora').innerText = dataHora;
+    }
+    setInterval(atualizarDataHora, 1000);
+
+    // 🔍 Validação do formulário
+    const formulario = document.getElementById('formularioInscricao');
+    formulario.addEventListener('submit', function(event) {
+      event.preventDefault(); // Impede o envio padrão
+
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const telefone = document.getElementById('telefone').value.trim();
+
+      if (nome === '') {
+        alert('Por favor, preencha seu nome completo.');
+        return;
+      }
+
+      if (email === '') {
+        alert('Por favor, preencha seu e-mail.');
+        return;
+      }
+
+      const emailRegex = /^[^\\s@]/;
+      if (!emailRegex.test(email)) {
+        alert('Por favor, insira um e-mail válido.');
+        return;
+      }
+
+      if (telefone !== '') {
+        const telefoneRegex = /^[0-9\\-\\(\\)\\s]+$/;
+        if (!telefoneRegex.test(telefone)) {
+          alert('Por favor, insira um telefone válido.');
+          return;
+        }
+      }
+
+      alert('Inscrição realizada com sucesso!');
+      formulario.reset();
+    });
+  </script>
+
+</body>
+</html>

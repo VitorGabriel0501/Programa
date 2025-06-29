@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encontro Internacional de Sherlock Holmes</title>
+  <link rel="stylesheet" href="design.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="dataHora"></div>
+
+  <div class="container">
+    <header>
+      <h1>Encontro Internacional de Sherlock Holmes</h1>
+      <p>Uma jornada pelo mistério e pela dedução</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#programacao">Programação</a></li>
+        <li><a href="#local">Local</a></li>
+        <li><a href="#palestrantes">Palestrantes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p>Venha desvendar mistérios no maior encontro de fãs de Sherlock Holmes! Teremos palestras, workshops, exposições, jogos de dedução e apresentações teatrais baseadas nas obras de Arthur Conan Doyle.</p>
+        <img src="sherlock.png" alt="Imagem de Sherlock Holmes">
+      </section>
+
+      <section id="programacao">
+  <h2>Programação</h2>
+  <div id="controles">
+  <h3>Gerenciar Eventos</h3>
+  <form id="formAdicionarEvento">
+    <input type="text" id="titulo" placeholder="Título" required>
+    <input type="text" id="horario" placeholder="Horário" required>
+    <input type="text" id="descricao" placeholder="Descrição" required>
+    <input type="text" id="palestrante" placeholder="Palestrante" required>
+    <button type="submit">Adicionar Evento</button>
+  </form>
+</div>
+  <div id="eventos"></div>
+</section>
+
+      <section id="local">
+        <h2>Local e Data</h2>
+        <p><strong>Data:</strong> 10 a 12 de Junho de 2025</p>
+        <p><strong>Local:</strong> Teatro Vitoriano, Londres - 221B Baker Street</p>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9938.593843847594!2d-0.16042104999999998!3d51.5237679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad01c205065%3A0xb0c5b6d8197bcac8!2s221B%20Baker%20St%2C%20London!5e0!3m2!1sen!2suk!4v1616606356953!5m2!1sen!2suk" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </section>
+
+      <section id="palestrantes">
+        <h2>Palestrantes</h2>
+        <div class="palestrante">
+          <img src="wattson.png" alt="Dr. John Watson">
+          <h3>Dr. John Watson</h3>
+          <p>Especialista em literatura vitoriana, autor de "Sherlock Holmes: Realidade e Ficção".</p>
+        </div>
+
+        <div class="palestrante">
+          <img src="Irene.png" alt="Irene Adler">
+          <h3>Irene Adler</h3>
+          <p>Historiadora renomada e pesquisadora das personagens femininas nas obras de Conan Doyle.</p>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <h4>Como faço para pagar a inscrição?</h4>
+        <p>O pagamento pode ser feito via cartão de crédito, Pix ou boleto bancário.</p>
+
+        <h4>Há estacionamento no local?</h4>
+        <p>Sim, o teatro possui estacionamento gratuito para até 200 veículos.</p>
+
+        <h4>O evento é aberto para crianças?</h4>
+        <p>Sim! Crianças a partir de 10 anos podem participar acompanhadas por um responsável.</p>
+      </section>
+
+      <section id="inscricao">
+        <h2>Inscreva-se</h2>
+        <p>Garanta seu lugar! Inscrições abertas até 20 de maio.</p>
+        <a href="inscriçãosh.html" target="_blank" class="botao">Inscreva-se Aqui</a>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Encontro Sherlock Holmes | Contato: contato@sherlockevent.com</p>
+      <div class="social">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24"></a>
+      </div>
+    </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

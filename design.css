@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral */
+  body {
+    font-family: 'Libre Baskerville', serif;
+    background: url('https://img.freepik.com/fotos-gratis/fundo-do-assoalho-de-madeira_53876-88628.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+    background-size: cover;
+    color: #4b3b2a;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+    padding: 0 1rem;
+  }
+  
+  /* Container central */
+  .container {
+    max-width: 800px; /* limite de largura para não ficar gigante */
+    margin: 0 auto;   /* centraliza horizontalmente */
+    padding: 20px;    /* espaço interno para respirar */
+    background-color: rgba(255, 255, 255, 0.9); /* leve fundo branco para destacar */
+    border-radius: 10px; /* cantos arredondados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* sombra leve */
+  }
+
+  .dark .container h1 {
+    color: white;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgba(75, 59, 42, 0.9);
+    color: #f8e9d2;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Playfair Display', serif;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Navegação */
+  nav {
+    background-color: rgba(90, 70, 50, 0.8);
+    margin-bottom: 2rem;
+    border-radius: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 10px;
+  }
+  
+  nav ul li a {
+    color: #f8e9d2;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    padding: 8px 12px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main */
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Seções */
+  section {
+    background-color: rgba(255, 248, 220, 0.9);
+    border: 1px solid #bfa171;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  section p, section li {
+    font-size: 1.1rem;
+  }
+  
+  /* Imagens */
+  section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border: 3px solid #bfa171;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Botão */
+  .botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7d5a3d;
+    color: #fff3e0;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao:hover {
+    background-color: #5c4033;
+  }
+  
+  /* Palestrantes */
+  .palestrante {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .palestrante img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(75, 59, 42, 0.9);
+    color: #d7c4a3;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+  
+  .social {
+    margin-top: 1rem;
+  }
+  
+  .social a {
+    margin: 0 8px;
+  }
+  
+  .social img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .evento {
+  background-color: rgba(255, 248, 220, 0.95);
+  border-left: 5px solid #bfa171;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  }  

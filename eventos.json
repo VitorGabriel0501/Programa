@@ -1,0 +1,25 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "titulo": "Palestra: Ciência Forense",
+      "horario": "11h00",
+      "descricao": "Técnicas forenses usadas por Sherlock.",
+      "palestrante": "Dr. Watson"
+    },
+    {
+      "id": 2,
+      "titulo": "Workshop de Dedução",
+      "horario": "14h00",
+      "descricao": "Aprenda dedução lógica como Holmes.",
+      "palestrante": "Irene Adler"
+    },
+    {
+      "id": 3,
+      "titulo": "Encenação: O Cão dos Baskervilles",
+      "horario": "18h00",
+      "descricao": "Uma encenação ao vivo do famoso caso.",
+      "palestrante": "Companhia Vitoriana de Teatro"
+    }
+  ]
+}
